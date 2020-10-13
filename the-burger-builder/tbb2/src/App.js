@@ -8,9 +8,8 @@ function App() {
   return (
     <div >
       <Layout>
-        <p>Test</p>
         <BurgerBuilder/>
-        </Layout>
+      </Layout>
     </div>
   );
 }
