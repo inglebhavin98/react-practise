@@ -18,7 +18,8 @@ const buildControls = (props) => (
             key={ctrl.label} 
             label={ctrl.label}
             added={() => props.ingredientAdded(ctrl.type)} //passback control type more
-            removed={() => props.ingredientRemoved(ctrl.type)}/> // arrow functions inside the code
+            removed={() => props.ingredientRemoved(ctrl.type)}
+            disabled={props.disabled[ctrl.type]}/> // arrow functions inside the code
         ))}
     </div>
 );
